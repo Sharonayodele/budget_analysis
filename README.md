@@ -103,7 +103,7 @@ Initial observations
 
 * Some the columns we need are in different tables, so we need to join some of these tables to make a big table.And then drop the tables we don't need.
 
-4.** Data cleaning**
+4. ** Data cleaning**
 The aim is to refine our dataset to ensure it is structured and ready for analysis.
 The cleaned data should meet the following criteria and constraints:
 - Only relevant columns should be extracted.
@@ -112,10 +112,43 @@ The cleaned data should meet the following criteria and constraints:
 Fortunately, the data is clean and structured with no null values. So we don’t need to spend any time cleaning.
 
 
+## Data Transformation 
+
+The major transformation to be done is joining the the tables
+
+---SQL
+
+-- big table
+SELECT 
+e.employee_id,
+e.first_name,
+e.last_name,
+e.job_title,
+e.salary,
+d.Department_Name,
+pa.project_id,
+p.project_name,
+p.status,
+p.project_budget,
+p.project_start_date,
+p.project_end_date
+
+FROM employees as e
+LEFT JOIN departments as d
+on e.department_id = d.Department_ID
+JOIN project_assignments as pa
+ON pa.employee_id= e.employee_id
+JOIN project_status as p
+ON p.project_id = pa.project_id
+---
+
+![Code snippet and results](assets/images/budget_analysis_big_table.PNG)
 
 
+## Visualization
 
-
+### Dashboard
+![power bi dashboard of budget analysis](assets/dashboard/budget_analysis - Trim3.mp4)
 
 
 
