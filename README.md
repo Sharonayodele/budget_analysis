@@ -151,12 +151,61 @@ ON p.project_id = pa.project_id
 ![power bi dashboard of budget analysis](assets/dashboard/budget_analysis - Trim3.mp4)
 
 
+## Analysis
+### Findings
+For this analysis, we will focus on the questions below to extract the information we need to provide insights.
+
+Here are the questions we need to answer: 
+1. What is the salary distribution?
+2. What are the departments expenditures?
+3. Can a year’s budget cover all expenses for each department?
+4. Which departments are at risk of being over budget or underperforming?
+
+### 1. What is the salary distribution?			
+				
+|First Name	|Last Name	|Department	|Salary	    |Salary distribution|
+|-----------|-----------|-----------|-----------|-------------------|
+|Michael	|Johnson	|Sales	    |$95,000.00	|11.93%             |
+|Sophia	    |Davis	    |HR	        |$90,000.00	|11.31%             |
+|Liam	    |Brown	    |Engineering|$85,000.00	|10.68%             |
+|Olivia	    |Wilson	    |IT	        |$83,000.00	|10.43%             |
+|Linda	    |Miller	    |Marketing	|$80,000.00	|10.05%             |
+|Emma	    |Taylor	    |Marketing	|$78,000.00	|9.80%              |
+|William	|Jones	    |Engineering|$75,000.00	|9.42%              |
+|Robert	    |Williams	|Sales	    |$72,000.00	|9.05%              |
+|Emily	    |Brown	    |HR	        |$70,000.00	|8.79%              |
+|David	    |Martinez	|IT	        |$68,000.00	|8.54%              |
+		
+		
+|Department	|Total salary	|Salary distribution|
+|-----------|---------------|-----------------|
+|Engineering|$173,000.00	|21.65            |
+|Marketing	|$168,000.00	|21.03            |
+|Sales	    |$165,000.00	|20.65            |
+|HR	        |$155,000.00	|19.40            |
+|IT	        |$138,000.00	|17.27            |
+|Total      |$799,000.00	|
+
+From the tables above, engineering and marketing departments are compensated more with 21.65% and 21.03% respectively. While the IT department is the least compensated with 17.27%. 
 
 
 
-
-
-
-
-
-
+		
+### 2. What are the department's expenditures?		
+|Department	 |Project cost  |	Budget        |
+|-----------|---------------|-----------------|
+Engineering	Website Overhaul	$60,000.00
+	SEO Optimization	$50,000.00
+		$110,000.00
+Marketing	Social Media Strategy	$45,000.00
+	Mobile App Development	$70,000.00
+		$115,000.00
+Sales	Product Launch	$80,000.00
+	Brand Repositioning	$70,000.00
+		$150,000.00
+HR	CRM Integration	$50,000.00
+	Customer Support System	$55,000.00
+		$105,000.00
+IT	Market Research	$30,000.00
+	New Marketing Campaign	$60,000.00
+		$90,000.00
