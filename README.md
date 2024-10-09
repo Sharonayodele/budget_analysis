@@ -244,8 +244,7 @@ The budget in the table above has been divided (by two) since the allocated budg
 
 				
 				
-|Department  |Total Expenditure	|Budget(two years)  |Balance	        |Budget deficit=	   |
-|            |                  |                   |                   |Balance - salary(2nd year)|
+|Department  |Total Expenditure	|Budget(two years)  |Balance	        |Budget deficit= Balance - salary(2nd year)|
 |------------|------------------|-------------------|-------------------|--------------------------|
 |Engineering |$283,000.00	|$1,200,000.00	    |$917,000.00	|$744,000.00 		   |   
 |Marketing   |$283,000.00	|$800,000.00	    |$517,000.00	|$349,000.00		   |
