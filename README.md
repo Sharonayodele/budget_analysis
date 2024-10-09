@@ -157,55 +157,127 @@ For this analysis, we will focus on the questions below to extract the informati
 
 Here are the questions we need to answer: 
 1. What is the salary distribution?
-2. What are the departments expenditures?
+2. What are the departments' expenditures?
 3. Can a year’s budget cover all expenses for each department?
 4. Which departments are at risk of being over budget or underperforming?
 
 ### 1. What is the salary distribution?			
 				
-|First Name	|Last Name	|Department	|Salary	    |Salary distribution|
-|-----------|-----------|-----------|-----------|-------------------|
-|Michael	|Johnson	|Sales	    |$95,000.00	|11.93%             |
-|Sophia	    |Davis	    |HR	        |$90,000.00	|11.31%             |
-|Liam	    |Brown	    |Engineering|$85,000.00	|10.68%             |
-|Olivia	    |Wilson	    |IT	        |$83,000.00	|10.43%             |
-|Linda	    |Miller	    |Marketing	|$80,000.00	|10.05%             |
-|Emma	    |Taylor	    |Marketing	|$78,000.00	|9.80%              |
-|William	|Jones	    |Engineering|$75,000.00	|9.42%              |
-|Robert	    |Williams	|Sales	    |$72,000.00	|9.05%              |
-|Emily	    |Brown	    |HR	        |$70,000.00	|8.79%              |
-|David	    |Martinez	|IT	        |$68,000.00	|8.54%              |
+|First Name |Last Name	|Department	|Salary	        |Salary distribution|
+|-----------|-----------|-------------|-----------------|-------------------|
+|Michael    |Johnson	|Sales	      |$95,000.00	|11.93%             |
+|Sophia	    |Davis	|HR	      |$90,000.00	|11.31%             |
+|Liam	    |Brown	|Engineering  |$85,000.00	|10.68%             |
+|Olivia	    |Wilson	|IT	      |$83,000.00	|10.43%             |
+|Linda	    |Miller	|Marketing    |$80,000.00	|10.05%             |
+|Emma	    |Taylor	|Marketing    |$78,000.00	|9.80%              |
+|William    |Jones	|Engineering  |$75,000.00	|9.42%              |
+|Robert	    |Williams	|Sales	      |$72,000.00	|9.05%              |
+|Emily	    |Brown	|HR	      |$70,000.00	|8.79%              |
+|David	    |Martinez	|IT	      |$68,000.00	|8.54%              |
 		
 		
-|Department	|Total salary	|Salary distribution|
-|-----------|---------------|-----------------|
-|Engineering|$173,000.00	|21.65            |
-|Marketing	|$168,000.00	|21.03            |
-|Sales	    |$165,000.00	|20.65            |
-|HR	        |$155,000.00	|19.40            |
-|IT	        |$138,000.00	|17.27            |
-|Total      |$799,000.00	|
+|Department	|Total salary |Salary distribution|
+|-------------|---------------|-------------------|
+|Engineering  |$173,000.00	|21.65            |
+|Marketing    |$168,000.00	|21.03            |
+|Sales	      |$165,000.00	|20.65            |
+|HR	      |$155,000.00	|19.40            |
+|IT	      |$138,000.00	|17.27            |
+|Total        |$799,000.00			  |
 
 From the tables above, engineering and marketing departments are compensated more with 21.65% and 21.03% respectively. While the IT department is the least compensated with 17.27%. 
 
 
 
 		
-### 2. What are the department's expenditures?		
-|Department	 |Project cost  |	Budget        |
-|-----------|---------------|-----------------|
-Engineering	Website Overhaul	$60,000.00
-	SEO Optimization	$50,000.00
-		$110,000.00
-Marketing	Social Media Strategy	$45,000.00
-	Mobile App Development	$70,000.00
-		$115,000.00
-Sales	Product Launch	$80,000.00
-	Brand Repositioning	$70,000.00
-		$150,000.00
-HR	CRM Integration	$50,000.00
-	Customer Support System	$55,000.00
-		$105,000.00
-IT	Market Research	$30,000.00
-	New Marketing Campaign	$60,000.00
-		$90,000.00
+### 2. What are the department's expenditures?	
+**Project costs**
+|Department |Project cost  |	Budget              |
+|-----------|---------------|-----------------------|
+|Engineering|Website Overhaul		 |$60,000.00|
+|	    |SEO Optimization	   	 |$50,000.00|
+|	    |				 |$110,000.00
+|Marketing  |Social Media Strategy 	 |$45,000.00|
+|	    |Mobile App Development	 |$70,000.00|
+|	    |				 |$115,000.00|
+|Sales	    |Product Launch    		 |$80,000.00|
+|	    |Brand Repositioning	 |$70,000.00|
+|	    |			         |$150,000.00|
+|HR	    |CRM Integration		 |$50,000.00|
+|	    |Customer Support System	 |$55,000.00|
+|	    |				 |$105,000.00|
+|IT	    |Market Research		 |$30,000.00|
+|	    |New Marketing Campaign	 |$60,000.00|
+|	    |				 |$90,000.00|
+
+**Total Expenditure**			
+|Department  |Project cost   |Salary            |Total	    |
+|------------|---------------|------------------|-----------|
+|Sales	     |$150,000.00    |$165,000.00	|$315,000.00|
+|Engineering |$110,000.00    |$173,000.00	|$283,000.00|
+|Marketing   |$115,000.00    |$168,000.00	|$283,000.00|
+|HR	     |$105,000.00    |$155,000.00	|$260,000.00|
+|IT	     |$90,000.00     |$138,000.00	|$228,000.00|
+
+Sales, engineering, and marketing have the highest expenditures. Therefore, more resources should be budgeted for these departments. IT has the least expenditure.
+
+### 3. Can a year’s budget cover all expenses for each department?
+
+|Department  |Total Expenditure	|Budget(one year) |Balance    |
+|------------|------------------|-----------------|-----------|
+|Engineering |$283,000.00	|$600,000.00	  |$317,000.00|
+|Marketing   |$283,000.00	|$400,000.00	  |$117,000.00|
+|Sales	     |$315,000.00	|$300,000.00	  |-$15,000.00|
+|HR	     |$260,000.00	|$200,000.00	  |-$60,000.00|
+|IT	     |$228,000.00	|$225,000.00	  |-$3,000.00 |
+
+The budget in the table above has been divided (by two) since the allocated budget is for two years. So combining the salaries for all the employees and grouping them in their respective departments plus the project cost, gives us the total expenditure for each department.
+**Verdict**
+-**Engineering**: The department's balance after deducting all expenditures is $317,000. Yes, a year's budget can cover all the department's expenses.
+-**Marketing**: The department's balance after deducting all expenditures is $117,000. Yes, a year's budget can cover all the department's expenses.
+-**Sales**: The department's balance after deducting all expenditures is -$15,000, No, a year's budget can’t cover all expenses. 
+-**IT**: The department's balance after deducting all expenditures is -$3,000 No, a year's budget can’t cover all expenses.
+-**HR**:  The department's balance after deducting all expenditures is -$60,000. No, a year's budget can’t cover all expenses.
+
+### 4. Which departments are at risk of being over budget or underperforming?
+
+				
+				
+|Department  |Total Expenditure	|Budget(two years)  |Balance	        |Budget deficit=	   |
+|            |                  |                   |                   |Balance - salary(2nd year)|
+|------------|------------------|-------------------|-------------------|--------------------------|
+|Engineering |$283,000.00	|$1,200,000.00	    |$917,000.00	|$744,000.00 		   |   
+|Marketing   |$283,000.00	|$800,000.00	    |$517,000.00	|$349,000.00		   |
+|Sales	     |$315,000.00	|$600,000.00	    |$285,000.00	|$120,000.00		   |
+|IT	     |$228,000.00	|$450,000.00	    |$222,000.00	|$67,000.00		   |
+|HR	     |$260,000.00	|$400,000.00	    |$140,000.00	|$2,000.00		   |
+
+Total expenditure = Projects costs + salary(first year only)
+Budget = Total Budget - total expenditure
+Balance = Balance - salary(second year)
+
+Verdict
+-**Engineering**: After deducting salaries for two years and project costs, the budget balance is $744,000. This is way over budget.
+
+-**Marketing**:After deducting salaries for two years and project costs, the budget balance is $744,000. Over budget.
+-**Sales**: After deducting salaries for two years and project costs, the budget balance is $120,000. Over budget. 
+-**IT**: After deducting salaries for two years and project costs, the budget balance is $67,000. Slightly over budget.
+-**HR**: After deducting salaries for two years and project costs, the budget balance is $2,000. Not over budget  
+
+Verdict: The HR department is the only department that is not over budgeted. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
