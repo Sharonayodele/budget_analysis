@@ -64,7 +64,7 @@ Sophia can
 The dashboard should:
 - List all the employees and their salaries
 - Track the projects' costs and project health.
-- Be user friendly and easy to sort/filter.
+- Be user-friendly and easy to sort/filter.
 
 **Dashboard mockup**
 Some of the data visuals that may be appropriate for answering our questions include:
@@ -179,14 +179,14 @@ Here are the questions we need to answer:
 		
 |Department	|Total salary |Salary distribution|
 |-------------|---------------|-------------------|
-|Engineering  |$173,000.00	|21.65            |
-|Marketing    |$168,000.00	|21.03            |
-|Sales	      |$165,000.00	|20.65            |
-|HR	      |$155,000.00	|19.40            |
-|IT	      |$138,000.00	|17.27            |
-|Total        |$799,000.00			  |
+|Engineering  |$160,000.00	|20.10            |
+|Marketing    |$158,000.00	|19.85            |
+|Sales	      |$167,000.00	|20.98            |
+|HR	      |$160,000.00	|20.10            |
+|IT	      |$151,000.00	|18.97            |
+|Total        |$796,000.00			  |
 
-From the tables above, engineering and marketing departments are compensated more with 21.65% and 21.03% respectively. While the IT department is the least compensated with 17.27%. 
+From the tables above, engineering and HR departments are compensated more with 20.1o%. While the IT department is the least compensated with 18.97%. 
 
 
 
@@ -214,11 +214,11 @@ From the tables above, engineering and marketing departments are compensated mor
 **Total Expenditure**			
 |Department  |Project cost   |Salary            |Total	    |
 |------------|---------------|------------------|-----------|
-|Sales	     |$150,000.00    |$165,000.00	|$315,000.00|
-|Engineering |$110,000.00    |$173,000.00	|$283,000.00|
-|Marketing   |$115,000.00    |$168,000.00	|$283,000.00|
-|HR	     |$105,000.00    |$155,000.00	|$260,000.00|
-|IT	     |$90,000.00     |$138,000.00	|$228,000.00|
+|Sales	     |$150,000.00    |$167,000.00	|$317,000.00|
+|Engineering |$110,000.00    |$160,000.00	|$270,000.00|
+|Marketing   |$115,000.00    |$158,000.00	|$283,000.00|
+|HR	     |$105,000.00    |$160,000.00	|$265,000.00|
+|IT	     |$90,000.00     |$51,000.00	|$241,000.00|
 
 Sales, engineering, and marketing have the highest expenditures. Therefore, more resources should be budgeted for these departments. IT has the least expenditure.
 
@@ -226,19 +226,19 @@ Sales, engineering, and marketing have the highest expenditures. Therefore, more
 
 |Department  |Total Expenditure	|Budget(one year) |Balance    |
 |------------|------------------|-----------------|-----------|
-|Engineering |$283,000.00	|$600,000.00	  |$317,000.00|
-|Marketing   |$283,000.00	|$400,000.00	  |$117,000.00|
-|Sales	     |$315,000.00	|$300,000.00	  |-$15,000.00|
-|HR	     |$260,000.00	|$200,000.00	  |-$60,000.00|
-|IT	     |$228,000.00	|$225,000.00	  |-$3,000.00 |
+|Engineering |$270,000.00	|$600,000.00	  |$330,000.00|
+|Marketing   |$273,000.00	|$400,000.00	  |$127,000.00|
+|Sales	     |$317,000.00	|$300,000.00	  |-$17,000.00|
+|HR	     |$265,000.00	|$200,000.00	  |-$65,000.00|
+|IT	     |$241,000.00	|$225,000.00	  |-$16,000.00 |
 
 The budget in the table above has been divided (by two) since the allocated budget is for two years. So combining the salaries for all the employees and grouping them in their respective departments plus the project cost, gives us the total expenditure for each department.
 **Verdict**
--**Engineering**: The department's balance after deducting all expenditures is $317,000. Yes, a year's budget can cover all the department's expenses.
--**Marketing**: The department's balance after deducting all expenditures is $117,000. Yes, a year's budget can cover all the department's expenses.
--**Sales**: The department's balance after deducting all expenditures is -$15,000, No, a year's budget can’t cover all expenses. 
--**IT**: The department's balance after deducting all expenditures is -$3,000 No, a year's budget can’t cover all expenses.
--**HR**:  The department's balance after deducting all expenditures is -$60,000. No, a year's budget can’t cover all expenses.
+-**Engineering**: The department's balance after deducting all expenditures is $330,000. Yes, a year's budget can cover all the department's expenses.
+-**Marketing**: The department's balance after deducting all expenditures is $127,000. Yes, a year's budget can cover all the department's expenses.
+-**Sales**: The department's balance after deducting all expenditures is -$17,000, No, a year's budget can’t cover all expenses. 
+-**IT**: The department's balance after deducting all expenditures is -$16,000 No, a year's budget can’t cover all expenses.
+-**HR**:  The department's balance after deducting all expenditures is -$65,000. No, a year's budget can’t cover all expenses.
 
 ### 4. Which departments are at risk of being over budget or underperforming?
 
@@ -246,11 +246,11 @@ The budget in the table above has been divided (by two) since the allocated budg
 				
 |Department  |Total Expenditure	|Budget(two years)  |Balance	        |Budget deficit= Balance - salary(2nd year)|
 |------------|------------------|-------------------|-------------------|--------------------------|
-|Engineering |$283,000.00	|$1,200,000.00	    |$917,000.00	|$744,000.00 		   |   
-|Marketing   |$283,000.00	|$800,000.00	    |$517,000.00	|$349,000.00		   |
-|Sales	     |$315,000.00	|$600,000.00	    |$285,000.00	|$120,000.00		   |
-|IT	     |$228,000.00	|$450,000.00	    |$222,000.00	|$67,000.00		   |
-|HR	     |$260,000.00	|$400,000.00	    |$140,000.00	|$2,000.00		   |
+|Engineering |$270,000.00	|$1,200,000.00	    |$930,000.00	|$770,000.00 		   |   
+|Marketing   |$273,000.00	|$800,000.00	    |$527,000.00	|$360,000.00		   |
+|Sales	     |$317,000.00	|$600,000.00	    |$283,000.00	|$116,000.00		   |
+|IT	     |$241,000.00	|$450,000.00	    |$209,000.00	|$58,000.00		   |
+|HR	     |$265,000.00	|$400,000.00	    |$135,000.00	|-$25,000.00		   |
 
 Total expenditure = Projects costs + salary(first year only)
 Budget = Total Budget - total expenditure
