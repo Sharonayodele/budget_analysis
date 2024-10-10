@@ -180,7 +180,7 @@ Here are the questions we need to answer:
 |Total        |$796,000.00			  |
 
 **Discovery**
-From the tables above, sales, engineering, and HR departments are the most compensated. While the IT department is the least compensated with 18.97%. 
+- From the tables above, sales, engineering, and HR departments are the most compensated. While the IT department is the least compensated with 18.97%. 
 
 	
 ### 2. What are the department's expenditures?	
@@ -204,7 +204,7 @@ From the tables above, sales, engineering, and HR departments are the most compe
 |Total	    |				 |$90,000.00|
 
 **Discovery**
-Sales, Marketing, and Engineering are the departments with the highest project cost. IT department has the least project cost.
+- Sales, Marketing, and Engineering are the departments with the highest project cost. IT department has the least project cost.
 
 **Total Expenditure**			
 |Department  |Project cost   |Salary            |Total	    |
@@ -214,8 +214,8 @@ Sales, Marketing, and Engineering are the departments with the highest project c
 |Marketing   |$115,000.00    |$158,000.00	|$283,000.00|
 |HR	     |$105,000.00    |$160,000.00	|$265,000.00|
 |IT	     |$90,000.00     |$51,000.00	|$241,000.00|
-
-Sales, engineering, and marketing have the highest expenditures. Therefore, more resources should be budgeted for these departments. 
+**Discovery**
+- Sales, engineering, and marketing have the highest expenditures. Therefore, more resources should be budgeted for these departments. 
 While IT department still has the least expenditure.
 
 ### 3. Can a year’s budget cover all expenses for each department?
