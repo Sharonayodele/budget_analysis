@@ -9,8 +9,6 @@
     - [Tools](#tools)
 - [Development](#development)
     - [Data Transformation](#data-transformation)
-    - [Create the SQL view](#create-the-sql-view)
-- [Data Quality Test](#data-quality-test)
 - [Visualization](#visualization)
 - [Analysis](#analysis)
   - [Discovery](#discovery)
@@ -230,11 +228,12 @@ While IT department still has the least expenditure.
 
 The budget in the table above has been divided (by two) since the allocated budget is for two years. So combining the salaries for all the employees and grouping them in their respective departments plus the project cost, gives us the total expenditure for each department.
 **Discovery**
--**Engineering**: The department's balance after deducting all expenditures is $330,000. 
--**Marketing**: The department's balance after deducting all expenditures is $127,000.
--**Sales**: The department's balance after deducting all expenditures is -$17,000, 
--**IT**: The department's balance after deducting all expenditures is -$16,000 
--**HR**:  The department's balance after deducting all expenditures is -$65,000. 
+
+- **Engineering**: The department's balance after deducting all expenditures is $330,000. 
+- **Marketing**: The department's balance after deducting all expenditures is $127,000.
+- **Sales**: The department's balance after deducting all expenditures is -$17,000, 
+- **IT**: The department's balance after deducting all expenditures is -$16,000 
+- **HR**:  The department's balance after deducting all expenditures is -$65,000. 
 
 **Verdict**
 - Engineering: Yes, a year's budget can cover all the department's expenses.
