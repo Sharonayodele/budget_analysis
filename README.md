@@ -244,7 +244,7 @@ The budget in the table above has been divided (by two) since the allocated budg
 
 				
 				
-|Department  |Total Expenditure	|Budget(two years)  |Balance	        |Budget deficit= Balance - salary(2nd year)|
+|Department  |Total Expenditure	|Budget(two years)  |Balance	        |Budget Balance= Balance - salary(2nd year)|
 |------------|------------------|-------------------|-------------------|--------------------------|
 |Engineering |$270,000.00	|$1,200,000.00	    |$930,000.00	|$770,000.00 		   |   
 |Marketing   |$273,000.00	|$800,000.00	    |$527,000.00	|$360,000.00		   |
@@ -252,19 +252,19 @@ The budget in the table above has been divided (by two) since the allocated budg
 |IT	     |$241,000.00	|$450,000.00	    |$209,000.00	|$58,000.00		   |
 |HR	     |$265,000.00	|$400,000.00	    |$135,000.00	|-$25,000.00		   |
 
-Total expenditure = Projects costs + salary(first year only)
-Budget = Total Budget - total expenditure
-Balance = Balance - salary(second year)
+- Total expenditure = Projects costs + salary(first year only)
+- Budget = Total Budget - total expenditure
+- Budget Balance = Balance - salary(second year)
 
 Verdict
--**Engineering**: After deducting salaries for two years and project costs, the budget balance is $744,000. This is way over budget.
+- **Engineering**: After deducting salaries for two years and project costs, the budget balance is $770,000. This is way over budget.
+- **Marketing**:After deducting two-year salaries and project costs, the budget balance is $360,000. Over budget.
+- **Sales**: After deducting two-year salaries and project costs, the budget balance is $116,000. Over budget. 
+- **IT**: After deducting two-year salaries and project costs, the budget balance is $58,000. Slightly over budget.
+- **HR**: After deducting two-year salaries and project costs, the budget balance is -$25,000. Not over budget  
 
--**Marketing**:After deducting salaries for two years and project costs, the budget balance is $744,000. Over budget.
--**Sales**: After deducting salaries for two years and project costs, the budget balance is $120,000. Over budget. 
--**IT**: After deducting salaries for two years and project costs, the budget balance is $67,000. Slightly over budget.
--**HR**: After deducting salaries for two years and project costs, the budget balance is $2,000. Not over budget  
-
-Verdict: The HR department is the only department that is not over budgeted. 
+Verdict: 
+The budget allocated for all the departments is not correctly estimated. While the marketing, sales, and engineering departments are over budget, the HR department is under budget. 
 
 
 
