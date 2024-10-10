@@ -177,7 +177,7 @@ Here are the questions we need to answer:
 |Sales	      |$167,000.00	|20.98            |
 |HR	      |$160,000.00	|20.10            |
 |IT	      |$151,000.00	|18.97            |
-|Total        |$796,000.00	|		  |
+|Total        |$796,000.00			  |
 
 **Discovery**
 From the tables above, sales, engineering, and HR departments are the most compensated. While the IT department is the least compensated with 18.97%. 
