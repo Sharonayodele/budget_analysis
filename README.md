@@ -107,7 +107,7 @@ Fortunately, the data is clean and structured with no null values. So we don’t
 
 The major transformation to be done is joining the tables using SQL
 
---- SQL
+```SQL
 
 SELECT 
 e.employee_id,
@@ -131,7 +131,7 @@ ON pa.employee_id= e.employee_id
 JOIN project_status as p
 ON p.project_id = pa.project_id
 
----
+```
 
 ![Code snippet and results](assets/images/budget_analysis_big_table.PNG)
 
@@ -202,6 +202,7 @@ From the tables above, sales, engineering, and HR departments are the most compe
 |IT	    |Market Research		 |$30,000.00|
 |	    |New Marketing Campaign	 |$60,000.00|
 |Total	    |				 |$90,000.00|
+
 **Discovery**
 Sales, Marketing, and Engineering are the departments with the highest project cost. IT department has the least project cost.
 
