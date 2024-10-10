@@ -18,12 +18,8 @@
   - [Results](#results)
   - [DAX Measures](#dax-measures)
 - [Analysis](#analysis)
-  - [Findings](#findings)
-  - [Validation](#validation)
   - [Discovery](#discovery)
-- [Recommendation](#recommendation)
-  - [Potential ROI](#potential-roi)
-  - [Action Plan](#action-plan)
+  - [Verdict](#verdict)
 
 ## Objectives 
 **Key point**
@@ -34,7 +30,6 @@ The objectives of this project are as follows:
 - Identify the budget performance for each department: Which departments are at risk of being over budget or underperforming?
 - Build an interactive dashboard to visualize the salary and budget distribution.
 
-
 **End users**
 - Primary User: Sophia(HR Manager)
 - Secondary users: team leads and the various Heads of Departments
@@ -43,7 +38,7 @@ The objectives of this project are as follows:
 As the HR manager, I want to assess the company's budget, expenditures, and project health for each department. But the data are stored in different tables which makes analysis tedious. So I need a visual representation of the data and a big table that contains all the important information from each table.
 
 **Success criteria**
-Sophia can
+Sophia can:
 * Easily identify the departments that are over budget and underperforming
 * Asses the salary distribution and project health
 * Make informed decisions about the budget allocation 
@@ -59,8 +54,9 @@ Sophia can
 8. Write the documentation + recommendation
 9. Publish the data to Github pages
 
-## Designs
+## Design
 **Features/Criteria**
+
 The dashboard should:
 - List all the employees and their salaries
 - Track the projects' costs and project health.
@@ -92,8 +88,8 @@ The data was provided.
 
 3. **Data Exploration**
 This is the stage where you have a scan of what's in the data including errors, inconsistencies, corrupted characters, etc
-Initial observations
-* There are 6 different table including:
+**Initial observations**
+* There are 6 different tables including:
 - Departments
 - Employees
 - Upcoming_projects
@@ -101,7 +97,7 @@ Initial observations
 - Projects
 - Project_assignments
 
-* Some the columns we need are in different tables, so we need to join some of these tables to make a big table.And then drop the tables we don't need.
+* Some of the columns we need are in different tables, so we need to join some of these tables to make a big table.And then drop the tables we don't need.
 
 4. ** Data cleaning**
 The aim is to refine our dataset to ensure it is structured and ready for analysis.
@@ -114,11 +110,10 @@ Fortunately, the data is clean and structured with no null values. So we don’t
 
 ## Data Transformation 
 
-The major transformation to be done is joining the the tables
+The major transformation to be done is joining the tables using SQL
 
----SQL
+--- SQL
 
--- big table
 SELECT 
 e.employee_id,
 e.first_name,
@@ -140,6 +135,7 @@ JOIN project_assignments as pa
 ON pa.employee_id= e.employee_id
 JOIN project_status as p
 ON p.project_id = pa.project_id
+
 ---
 
 ![Code snippet and results](assets/images/budget_analysis_big_table.PNG)
@@ -148,11 +144,11 @@ ON p.project_id = pa.project_id
 ## Visualization
 
 ### Dashboard
-![power bi dashboard of budget analysis](assets/dashboard/budget_analysis - Trim3.mp4)
+![power bi dashboard of budget analysis](assets/dashboard/bdgt_analysis_snip.PNG)
 
 
 ## Analysis
-### Findings
+
 For this analysis, we will focus on the questions below to extract the information we need to provide insights.
 
 Here are the questions we need to answer: 
@@ -161,8 +157,10 @@ Here are the questions we need to answer:
 3. Can a year’s budget cover all expenses for each department?
 4. Which departments are at risk of being over budget or underperforming?
 
-### 1. What is the salary distribution?			
-				
+### Discovery
+### 1. What is the salary distribution?		
+
+**Salary of employees**				
 |First Name |Last Name	|Department	|Salary	        |Salary distribution|
 |-----------|-----------|-------------|-----------------|-------------------|
 |Michael    |Johnson	|Sales	      |$95,000.00	|11.93%             |
@@ -176,7 +174,7 @@ Here are the questions we need to answer:
 |Emily	    |Brown	|HR	      |$70,000.00	|8.79%              |
 |David	    |Martinez	|IT	      |$68,000.00	|8.54%              |
 		
-		
+**Sum of salary**		
 |Department	|Total salary |Salary distribution|
 |-------------|---------------|-------------------|
 |Engineering  |$160,000.00	|20.10            |
@@ -184,32 +182,33 @@ Here are the questions we need to answer:
 |Sales	      |$167,000.00	|20.98            |
 |HR	      |$160,000.00	|20.10            |
 |IT	      |$151,000.00	|18.97            |
-|Total        |$796,000.00			  |
+|Total        |$796,000.00	|		  |
 
-From the tables above, engineering and HR departments are compensated more with 20.1o%. While the IT department is the least compensated with 18.97%. 
+**Discovery**
+From the tables above, sales, engineering, and HR departments are the most compensated. While the IT department is the least compensated with 18.97%. 
 
-
-
-		
+	
 ### 2. What are the department's expenditures?	
 **Project costs**
 |Department |Project cost  |	Budget              |
 |-----------|---------------|-----------------------|
 |Engineering|Website Overhaul		 |$60,000.00|
 |	    |SEO Optimization	   	 |$50,000.00|
-|	    |				 |$110,000.00
+|Total	    |				 |$110,000.00
 |Marketing  |Social Media Strategy 	 |$45,000.00|
 |	    |Mobile App Development	 |$70,000.00|
-|	    |				 |$115,000.00|
+|Total	    |				 |$115,000.00|
 |Sales	    |Product Launch    		 |$80,000.00|
 |	    |Brand Repositioning	 |$70,000.00|
-|	    |			         |$150,000.00|
+|Total	    |			         |$150,000.00|
 |HR	    |CRM Integration		 |$50,000.00|
 |	    |Customer Support System	 |$55,000.00|
-|	    |				 |$105,000.00|
+|Total	    |				 |$105,000.00|
 |IT	    |Market Research		 |$30,000.00|
 |	    |New Marketing Campaign	 |$60,000.00|
-|	    |				 |$90,000.00|
+|Total	    |				 |$90,000.00|
+**Discovery**
+Sales, Marketing, and Engineering are the departments with the highest project cost. IT department has the least project cost.
 
 **Total Expenditure**			
 |Department  |Project cost   |Salary            |Total	    |
@@ -220,7 +219,8 @@ From the tables above, engineering and HR departments are compensated more with 
 |HR	     |$105,000.00    |$160,000.00	|$265,000.00|
 |IT	     |$90,000.00     |$51,000.00	|$241,000.00|
 
-Sales, engineering, and marketing have the highest expenditures. Therefore, more resources should be budgeted for these departments. IT has the least expenditure.
+Sales, engineering, and marketing have the highest expenditures. Therefore, more resources should be budgeted for these departments. 
+While IT department still has the least expenditure.
 
 ### 3. Can a year’s budget cover all expenses for each department?
 
@@ -233,16 +233,20 @@ Sales, engineering, and marketing have the highest expenditures. Therefore, more
 |IT	     |$241,000.00	|$225,000.00	  |-$16,000.00 |
 
 The budget in the table above has been divided (by two) since the allocated budget is for two years. So combining the salaries for all the employees and grouping them in their respective departments plus the project cost, gives us the total expenditure for each department.
+**Discovery**
+-**Engineering**: The department's balance after deducting all expenditures is $330,000. 
+-**Marketing**: The department's balance after deducting all expenditures is $127,000.
+-**Sales**: The department's balance after deducting all expenditures is -$17,000, 
+-**IT**: The department's balance after deducting all expenditures is -$16,000 
+-**HR**:  The department's balance after deducting all expenditures is -$65,000. 
+
 **Verdict**
--**Engineering**: The department's balance after deducting all expenditures is $330,000. Yes, a year's budget can cover all the department's expenses.
--**Marketing**: The department's balance after deducting all expenditures is $127,000. Yes, a year's budget can cover all the department's expenses.
--**Sales**: The department's balance after deducting all expenditures is -$17,000, No, a year's budget can’t cover all expenses. 
--**IT**: The department's balance after deducting all expenditures is -$16,000 No, a year's budget can’t cover all expenses.
--**HR**:  The department's balance after deducting all expenditures is -$65,000. No, a year's budget can’t cover all expenses.
-
-### 4. Which departments are at risk of being over budget or underperforming?
-
-				
+- Engineering: Yes, a year's budget can cover all the department's expenses.
+- Marketing:  Yes, a year's budget can cover all the department's expenses.
+- Sales: No, a year's budget can’t cover all expenses. 
+- IT: No, a year's budget can’t cover all expenses.
+- HR: No, a year's budget can’t cover all expenses.
+### 4. Which departments are at risk of being over budget or under budget?				
 				
 |Department  |Total Expenditure	|Budget(two years)  |Balance	        |Budget Balance= Balance - salary(2nd year)|
 |------------|------------------|-------------------|-------------------|--------------------------|
@@ -256,16 +260,20 @@ The budget in the table above has been divided (by two) since the allocated budg
 - Budget = Total Budget - total expenditure
 - Budget Balance = Balance - salary(second year)
 
-Verdict
-- **Engineering**: After deducting salaries for two years and project costs, the budget balance is $770,000. This is way over budget.
-- **Marketing**:After deducting two-year salaries and project costs, the budget balance is $360,000. Over budget.
-- **Sales**: After deducting two-year salaries and project costs, the budget balance is $116,000. Over budget. 
-- **IT**: After deducting two-year salaries and project costs, the budget balance is $58,000. Slightly over budget.
-- **HR**: After deducting two-year salaries and project costs, the budget balance is -$25,000. Not over budget  
+**Discovery**
+- **Engineering**: After deducting salaries for two years and project costs, the budget balance is $770,000. 
+- **Marketing**:After deducting two-year salaries and project costs, the budget balance is $360,000. 
+- **Sales**: After deducting two-year salaries and project costs, the budget balance is $116,000. 
+- **IT**: After deducting two-year salaries and project costs, the budget balance is $58,000. 
+- **HR**: After deducting two-year salaries and project costs, the budget balance is -$25,000.
 
-Verdict: 
+**Verdict**
 The budget allocated for all the departments is not correctly estimated. While the marketing, sales, and engineering departments are over budget, the HR department is under budget. 
-
+- Engineering: Over budget.
+- Marketing: Over budget.
+- Sales: Over budget. 
+- IT: Over budget.
+- HR: Under budget
 
 
 
