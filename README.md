@@ -8,15 +8,10 @@
 - [Design](#design)
     - [Tools](#tools)
 - [Development](#development)
-    - [Pseudocode](#pseudocode)
-    - [Data Exploration](#data-exploration)
-    - [Data Cleaning](#data-cleaning)
     - [Data Transformation](#data-transformation)
     - [Create the SQL view](#create-the-sql-view)
 - [Data Quality Test](#data-quality-test)
 - [Visualization](#visualization)
-  - [Results](#results)
-  - [DAX Measures](#dax-measures)
 - [Analysis](#analysis)
   - [Discovery](#discovery)
   - [Verdict](#verdict)
@@ -99,7 +94,7 @@ This is the stage where you have a scan of what's in the data including errors, 
 
 * Some of the columns we need are in different tables, so we need to join some of these tables to make a big table.And then drop the tables we don't need.
 
-4. ** Data cleaning**
+4. **Data cleaning**
 The aim is to refine our dataset to ensure it is structured and ready for analysis.
 The cleaned data should meet the following criteria and constraints:
 - Only relevant columns should be extracted.
